@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.caixa {
+.caixa-numero {
     width: 100px;
     height: 100px;
     background-color: rgb(145, 255, 0);
@@ -13,3 +13,15 @@
     text-align: center;
     box-shadow:3px 3px 8px coral ;/*borda */
  } 
+
+ .caixa-nome {
+     width: 500px;
+     height: 100px;
+     background-color: gold;
+     font-size: 64px;
+     margin: 16px;
+     text-align: center;
+ }
+ .caixa-container {
+     display: flex;
+ }

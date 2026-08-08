@@ -4,13 +4,19 @@
 
 function criarCaixa (numero) {
     const caixaContainer = document.createElement('div')
-    const caixaNumero = document.createElement('div')
+    caixaContainer.className = 'caixa-container'
 
-    caixaNumero.className = 'caixa'
+    const caixaNumero = document.createElement('div')
+    caixaNumero.className = 'caixa-numero'
     caixaNumero.textContent = numero
 
-    caixaContainer.append(caixaNumero)
-    return caixa
+    
+    const caixaNome = document.createElement('div')
+    caixaNome.className = 'caixa-nome'
+    caixaNome.textContent = 'Aluno - '+ numero
+
+    caixaContainer.append(caixaNumero, caixaNome)
+    return caixaContainer
 }
 
 function adicionarCaixa () {
