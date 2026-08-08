@@ -1,11 +1,15 @@
 'use strict'
 
-const botaoCriar = document.getElementById('criar')
+ const botaoCriar = document.getElementById('criar')//função de repetição
 
 function criarCaixa (numero) {
-    const caixa = document.createElement('div')
-    caixa.className = 'caixa'
-    caixa.textContent = numero
+    const caixaContainer = document.createElement('div')
+    const caixaNumero = document.createElement('div')
+
+    caixaNumero.className = 'caixa'
+    caixaNumero.textContent = numero
+
+    caixaContainer.append(caixaNumero)
     return caixa
 }
 
