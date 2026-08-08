@@ -3,14 +3,14 @@
  const botaoCriar = document.getElementById('criar')//função de repetição
 
 function criarCaixa (numero) {
-    const caixaContainer = document.createElement('div')
+    const caixaContainer = document.createElement('div')//criando caixas 
     caixaContainer.className = 'caixa-container'
 
     const caixaNumero = document.createElement('div')
     caixaNumero.className = 'caixa-numero'
     caixaNumero.textContent = numero
 
-    
+
     const caixaNome = document.createElement('div')
     caixaNome.className = 'caixa-nome'
     caixaNome.textContent = 'Aluno - '+ numero

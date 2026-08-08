@@ -17,11 +17,14 @@
  .caixa-nome {
      width: 500px;
      height: 100px;
-     background-color: gold;
+     background-color:rgb(145, 255, 0)
+     ;
      font-size: 64px;
      margin: 16px;
      text-align: center;
+     box-shadow:3px 3px 8px coral ;/*borda */
  }
  .caixa-container {
      display: flex;
+     /* z-index: auto; */
  }
